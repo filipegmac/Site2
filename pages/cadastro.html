@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/cadastro.css">
+    <title>Cadastro</title>
+
+</head>
+<body>
+<div class="form">
+    <h2>Cadastro</h2>
+
+    <form name="cadastro" id="cadastro">
+
+        <label for="nome">Nome:</label> <br/>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required> <br/>
+
+        <label for="email">Email:</label> <br/>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required> <br/>
+
+        <label for="senha">Senha:</label> <br/>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required> <br/>
+
+
+        <label>Anime favorito: <br/>
+            <select name="animes" id="anime" required>
+                <option value="/img/death.jpg" data-nome="Death Note">Death Note</option>
+                <option value="/img/naruto.png" data-nome="Naruto">Naruto</option>
+                <option value="/img/hunter.jpeg" data-nome="Hunter x Hunter">Hunter x Hunter</option>
+                <option value="/img/piece.jpg" data-nome="One Piece">One Piece</option>
+            </select>
+        </label><br/>
+        <input type="submit" value="Criar conta" id="button">
+    </form>
+    <p class="error"></p>
+    <p>Já possui uma conta? <a href="login.html">Faça login</a></p>
+</div>
+
+<script src="/js/cadastro.js"></script>
+</body>
+</html>
