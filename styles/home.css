@@ -21,12 +21,14 @@ body {
     height: 400px;
 }
 
-#anime {
+#anime-image {
     max-width: 300px;
     max-height: 200px;
     border: 2px solid #ccc;
     border-radius: 10px;
+    object-fit: cover;
 }
+
 
 #sair {
     margin-top: 20px;
